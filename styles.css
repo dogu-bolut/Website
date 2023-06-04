@@ -396,12 +396,14 @@ header {
 }
 
 #about,
-#services,
-#projects {
+#games,
+#projects,
+#websites {
   height: 80vh;
 }
 
-#services {
+#projects,
+#games {
   background: var(--clr-white);
 }
 
