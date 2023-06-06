@@ -398,7 +398,8 @@ header {
 #about,
 #games,
 #projects,
-#websites {
+#websites,
+#contacts {
   height: 80vh;
 }
 
@@ -418,6 +419,22 @@ footer p {
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   margin-bottom: 0;
+}
+
+.link-container {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+  text-align: center;
+}
+
+.gamelink-container {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 1px;
+  text-align: center;
 }
 
 .top-link {
