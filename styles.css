@@ -422,19 +422,58 @@ footer p {
 }
 
 .link-container {
-  margin-top: 100px;
+  margin-top: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
+@media screen and (min-width: 200px){
+  .website-link{
+    border-radius: 2px;
+    margin: 5px;
+    border: 2px dotted lightgray;
+    padding: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .website-link{
+    border-radius: 5px;
+    margin: 5px;
+    border: 3px dotted lightgray;
+    padding: 30px;
+  }
+}
+
 .gamelink-container {
-  margin-top: 100px;
+  margin-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 1px;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 200px){
+  .game-link{
+    border-radius: 2px;
+    margin: 5px;
+    border: 2px dotted lightgray;
+    padding: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .game-link{
+    border-radius: 5px;
+    margin: 5px;
+    border: 3px dotted lightgray;
+    padding: 30px;
+  }
 }
 
 .top-link {
