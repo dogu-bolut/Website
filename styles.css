@@ -398,9 +398,16 @@ header {
 #about,
 #games,
 #projects,
-#websites,
 #contacts {
   height: 80vh;
+}
+
+#websites {
+  height: 100vh;
+}
+
+#projects p {
+  line-height: 5vh;
 }
 
 #projects,
@@ -430,8 +437,8 @@ footer p {
   text-align: center;
 }
 
-@media screen and (min-width: 200px){
-  .website-link{
+@media screen and (min-width: 200px) {
+  .website-link {
     border-radius: 2px;
     margin: 5px;
     border: 2px dotted lightgray;
@@ -439,8 +446,8 @@ footer p {
   }
 }
 
-@media screen and (min-width: 1200px){
-  .website-link{
+@media screen and (min-width: 1200px) {
+  .website-link {
     border-radius: 5px;
     margin: 5px;
     border: 3px dotted lightgray;
@@ -458,8 +465,8 @@ footer p {
   justify-content: center;
 }
 
-@media screen and (min-width: 200px){
-  .game-link{
+@media screen and (min-width: 200px) {
+  .game-link {
     border-radius: 2px;
     margin: 5px;
     border: 2px dotted lightgray;
@@ -467,8 +474,8 @@ footer p {
   }
 }
 
-@media screen and (min-width: 1200px){
-  .game-link{
+@media screen and (min-width: 1200px) {
+  .game-link {
     border-radius: 5px;
     margin: 5px;
     border: 3px dotted lightgray;
