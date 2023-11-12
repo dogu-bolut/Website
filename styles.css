@@ -305,7 +305,7 @@ nav {
   color: var(--clr-grey-1);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 950px) {
   nav {
     background: transparent;
   }
@@ -395,19 +395,22 @@ header {
   color: var(--clr-secondary);
 }
 
+#contacts {
+  height: 50vh;
+}
+
 #games,
 #projects,
-#contacts {
+#about {
   height: 80vh;
 }
 
-#about,
 #websites {
   height: 100vh;
 }
 
 #about p {
-  margin-bottom: 0.75rem;
+  margin-bottom: 45px;
 }
 
 #projects p {
@@ -448,6 +451,34 @@ footer p {
     border: 2px dotted lightgray;
     padding: 8px;
   }
+
+  #about {
+    height: 90vh;
+  }
+
+  #about p {
+    margin-bottom: 20px;
+  }
+
+  #websites {
+    height: 70vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #about {
+    height: 65vh;
+  }
+}
+
+@media screen and (max-height: 800px) and (max-width:400px) {
+  #websites {
+    height: 90vh;
+  }
+
+  #about {
+    height: 120vh;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -476,6 +507,8 @@ footer p {
     border: 2px dotted lightgray;
     padding: 8px;
   }
+
+
 }
 
 @media screen and (min-width: 1200px) {
