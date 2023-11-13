@@ -413,7 +413,6 @@ header {
   display: flex;
   justify-content: center;
   text-align: justify;
-  margin-bottom: 45px;
 }
 
 #projects p {
@@ -461,6 +460,7 @@ footer p {
 
   #about p {
     margin-bottom: 20px;
+    margin-left: 2%;
   }
 
   #websites {
@@ -511,6 +511,7 @@ footer p {
 
   #about p {
     margin-bottom: 45px;
+    margin-left: 7%;
   }
 }
 
