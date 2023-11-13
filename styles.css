@@ -398,12 +398,13 @@ header {
   color: var(--clr-secondary);
 }
 
+#projects,
 #contacts {
   height: 50vh;
 }
 
 #games,
-#projects,
+
 #about {
   height: 80vh;
 }
@@ -437,7 +438,7 @@ footer p {
 .link-container {
   margin-top: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -481,11 +482,15 @@ footer p {
 
 @media screen and (max-height: 800px) and (max-width:400px) {
   #websites {
-    height: 90vh;
+    height: 100vh;
   }
 
   #about {
     height: 120vh;
+  }
+
+  #projects {
+    height: 60vh;
   }
 }
 
@@ -498,7 +503,7 @@ footer p {
   }
 
   #websites {
-    height: 100vh;
+    height: 120vh;
   }
 }
 
