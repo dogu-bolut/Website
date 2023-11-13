@@ -357,7 +357,7 @@ nav {
 /* hero */
 header {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(212, 209, 63, 0.5), rgba(0, 0, 0, 0.7)),
     url(./PathToMountain.jpg) center/cover no-repeat;
 }
 
@@ -461,11 +461,20 @@ footer p {
   #websites {
     height: 70vh;
   }
+
+  header {
+    width: 28rem;
+    max-width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
   #about {
     height: 65vh;
+  }
+
+  header {
+    width: 100%;
   }
 }
 
