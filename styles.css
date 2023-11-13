@@ -410,6 +410,9 @@ header {
 }
 
 #about p {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
   margin-bottom: 45px;
 }
 
@@ -504,6 +507,10 @@ footer p {
 
   #websites {
     height: 120vh;
+  }
+
+  #about p {
+    margin-bottom: 45px;
   }
 }
 
