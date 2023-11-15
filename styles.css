@@ -300,7 +300,7 @@ nav {
   letter-spacing: var(--spacing);
   display: block;
   transition: var(--transition);
-  font-weight: bold;
+  font-weight: 600;
   padding: 0.75rem 0;
 }
 
@@ -347,7 +347,7 @@ nav {
     display: block;
     transition: var(--transition);
     margin: 0 1rem;
-    font-weight: bold;
+    font-weight: 600;
     padding: 0;
   }
 
