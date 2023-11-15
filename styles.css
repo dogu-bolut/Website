@@ -440,14 +440,40 @@ footer p {
 .link-container {
   margin-top: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
+.website-link {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.website-link:hover {
+  text-decoration: none;
+  color: #E6ECD1;
+  background-color: #291944;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
 @media screen and (min-width: 200px) {
+  .link-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   .website-link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    min-height: 60px;
     border-radius: 2px;
     margin: 5px;
     border: 2px dotted lightgray;
@@ -465,7 +491,7 @@ footer p {
   }
 
   #websites {
-    height: 70vh;
+    min-height: 70vh;
   }
 
   header {
@@ -476,7 +502,7 @@ footer p {
 
 @media screen and (min-width: 768px) {
   #about {
-    height: 65vh;
+    height: 70vh;
   }
 
   header {
@@ -486,7 +512,7 @@ footer p {
 
 @media screen and (max-height: 800px) and (max-width:400px) {
   #websites {
-    height: 100vh;
+    min-height: 100vh;
   }
 
   #about {
@@ -499,7 +525,12 @@ footer p {
 }
 
 @media screen and (min-width: 1200px) {
+  .link-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
   .website-link {
+    min-height: 10px;
     border-radius: 5px;
     margin: 5px;
     border: 3px dotted lightgray;
@@ -527,17 +558,48 @@ footer p {
   justify-content: center;
 }
 
+.game-link {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.game-link:hover {
+  text-decoration: none;
+  color: #E6ECD1;
+  background-color: #291944;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
 @media screen and (min-width: 200px) {
+  .gamelink-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   .game-link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    min-height: 60px;
     border-radius: 2px;
     margin: 5px;
     border: 2px dotted lightgray;
-    padding: 8px;
+    padding: 5px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .gamelink-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
   .game-link {
+    min-height: 10px;
     border-radius: 5px;
     margin: 5px;
     border: 3px dotted lightgray;
