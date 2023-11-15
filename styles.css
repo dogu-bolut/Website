@@ -3,6 +3,7 @@
 Fonts
 ===============
 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
 /*
@@ -45,7 +46,7 @@ Variables
   --clr-secondary: hsla(182, 63%, 54%);
   --clr-black: #222;
   --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Open Sans", sans-serif;
+  --ff-secondary: "Poppins", sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
@@ -437,6 +438,21 @@ footer p {
   margin-bottom: 0;
 }
 
+.my-adress {
+  padding: 7px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.my-adress:hover {
+  color: #E6ECD1;
+  background-color: #1a1a1a;
+}
+
 .link-container {
   margin-top: 50px;
   display: grid;
@@ -450,17 +466,13 @@ footer p {
   text-decoration: none;
   color: #1a1a1a;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 300;
   transition: 0.3s ease;
 }
 
 .website-link:hover {
-  text-decoration: none;
   color: #E6ECD1;
   background-color: #291944;
-  font-size: 16px;
-  font-weight: 600;
-  transition: 0.3s ease;
 }
 
 @media screen and (min-width: 200px) {
@@ -562,17 +574,13 @@ footer p {
   text-decoration: none;
   color: #1a1a1a;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 300;
   transition: 0.3s ease;
 }
 
 .game-link:hover {
-  text-decoration: none;
   color: #E6ECD1;
   background-color: #291944;
-  font-size: 16px;
-  font-weight: 600;
-  transition: 0.3s ease;
 }
 
 @media screen and (min-width: 200px) {
