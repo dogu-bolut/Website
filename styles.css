@@ -381,9 +381,7 @@ header {
 
 .container p {
   color: var(--clr-white);
-  max-width: 25rem;
-  margin: 0 auto;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.75rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -417,7 +415,7 @@ header {
 #about p {
   display: flex;
   justify-content: center;
-  text-align: center;
+  text-align: justify;
 }
 
 #projects p {
@@ -486,7 +484,12 @@ footer p {
 }
 
 @media screen and (min-width: 200px) {
+  .title h2 {
+    margin-bottom: 1rem;
+  }
+
   .link-container {
+    margin-top: 30px;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
@@ -494,21 +497,25 @@ footer p {
     display: flex;
     flex-direction: column;
     text-align: center;
+    font-size: 14px;
     justify-content: center;
     min-height: 60px;
-    border-radius: 2px;
+    border-radius: 6px;
     margin: 5px;
-    border: 2px dotted lightgray;
+    border: 1px dashed lightgray;
     padding: 8px;
   }
 
+  .my-adress {
+    font-size: 14px;
+  }
+
   #about {
-    height: 90vh;
+    height: 100vh;
   }
 
   #about p {
-    margin-bottom: 20px;
-    margin: 0 8%;
+    padding: 0 3%;
   }
 
   #websites {
@@ -522,12 +529,25 @@ footer p {
 }
 
 @media screen and (min-width: 768px) {
+  .title h2 {
+    margin-bottom: 2rem;
+  }
+
   #about {
     height: 70vh;
   }
 
   header {
     width: 100%;
+  }
+
+  .website-link {
+    font-size: 16px;
+    border: 1.5px dashed lightgray;
+  }
+
+  .my-adress {
+    font-size: 16px;
   }
 }
 
@@ -546,16 +566,26 @@ footer p {
 }
 
 @media screen and (min-width: 1200px) {
+  .title h2 {
+    margin-bottom: 3rem;
+  }
+
   .link-container {
+    margin-top: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .website-link {
     min-height: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
+    font-size: 18px;
     margin: 5px;
-    border: 3px dotted lightgray;
+    border: 2px dashed lightgray;
     padding: 30px;
+  }
+
+  .my-adress {
+    font-size: 18px;
   }
 
   #websites {
@@ -563,8 +593,7 @@ footer p {
   }
 
   #about p {
-    margin-bottom: 45px;
-    margin: 0 7%;
+    padding: 0 7%;
   }
 }
 
@@ -581,7 +610,7 @@ footer p {
 .game-link {
   text-decoration: none;
   color: #1a1a1a;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 300;
   transition: 0.3s ease;
 }
@@ -600,12 +629,20 @@ footer p {
     display: flex;
     flex-direction: column;
     text-align: center;
+    font-size: 14px;
     justify-content: center;
     min-height: 60px;
-    border-radius: 2px;
+    border-radius: 6px;
     margin: 5px;
-    border: 2px dotted lightgray;
+    border: 1px dashed lightgray;
     padding: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .game-link {
+    font-size: 16px;
+    border: 1.5px dashed lightgray;
   }
 }
 
@@ -616,9 +653,10 @@ footer p {
 
   .game-link {
     min-height: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
+    font-size: 18px;
     margin: 5px;
-    border: 3px dotted lightgray;
+    border: 2px dashed lightgray;
     padding: 30px;
   }
 }
