@@ -75,7 +75,6 @@ html {
 
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-grey-10);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -413,7 +412,7 @@ header {
 #about p {
   display: flex;
   justify-content: center;
-  text-align: justify;
+  text-align: center;
 }
 
 #projects p {
@@ -423,6 +422,12 @@ header {
 #projects,
 #games {
   background: var(--clr-white);
+}
+
+#about,
+#websites,
+#contacts {
+  background: #E6ECD1;
 }
 
 footer {
@@ -498,8 +503,7 @@ footer p {
 
   #about p {
     margin-bottom: 20px;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin: 0 8%;
   }
 
   #websites {
@@ -555,8 +559,7 @@ footer p {
 
   #about p {
     margin-bottom: 45px;
-    margin-left: 7%;
-    margin-right: 7%;
+    margin: 0 7%;
   }
 }
 
