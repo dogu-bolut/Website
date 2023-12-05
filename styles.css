@@ -406,12 +406,12 @@ header {
 }
 
 #games,
-
 #about {
   height: 80vh;
 }
 
 #about p {
+  font-size: 18px;
   display: flex;
   justify-content: center;
   text-align: justify;
@@ -510,10 +510,11 @@ footer p {
   }
 
   #about {
-    height: 120vh;
+    height: 100vh;
   }
 
   #about p {
+    font-size: 12px;
     padding: 0 3%;
   }
 
