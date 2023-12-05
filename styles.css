@@ -134,8 +134,8 @@ h4 {
 }
 
 p {
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 7%;
+  margin-right: 7%;
   text-align: center;
   min-width: 200px;
   max-width: 1600px;
@@ -483,7 +483,13 @@ footer p {
 }
 
 @media screen and (min-width: 200px) {
+  p {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
   .title h2 {
+    font-size: 20px;
     margin-bottom: 1rem;
   }
 
@@ -528,7 +534,13 @@ footer p {
 }
 
 @media screen and (min-width: 768px) {
+  p {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
   .title h2 {
+    font-size: 24px;
     margin-bottom: 2rem;
   }
 
@@ -565,7 +577,13 @@ footer p {
 }
 
 @media screen and (min-width: 1200px) {
+  p {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+
   .title h2 {
+    font-size: 30px;
     margin-bottom: 3rem;
   }
 
