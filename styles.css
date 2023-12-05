@@ -134,10 +134,10 @@ h4 {
 }
 
 p {
-  margin-left: 7%;
-  margin-right: 7%;
+  margin-left: 2%;
+  margin-right: 2%;
   text-align: center;
-  min-width: 320px;
+  min-width: 200px;
   max-width: 1600px;
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
@@ -393,7 +393,6 @@ header {
 
 .title h2 {
   text-align: center;
-  justify-content: center;
   text-transform: uppercase;
 }
 
@@ -483,7 +482,7 @@ footer p {
   background-color: #291944;
 }
 
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 200px) {
   .title h2 {
     margin-bottom: 1rem;
   }
@@ -523,8 +522,7 @@ footer p {
   }
 
   header {
-    width: 28rem;
-    max-width: 100%;
+    min-width: 100%;
   }
 }
 
@@ -535,10 +533,6 @@ footer p {
 
   #about {
     height: 70vh;
-  }
-
-  header {
-    width: 100%;
   }
 
   .website-link {
@@ -620,7 +614,7 @@ footer p {
   background-color: #291944;
 }
 
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 200px) {
   .gamelink-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
