@@ -488,8 +488,9 @@ footer p {
     margin-right: 3%;
   }
 
-  .title h2 {
-    font-size: 20px;
+  .title h2,
+  h1 {
+    font-size: 24px;
     margin-bottom: 1rem;
   }
 
@@ -531,6 +532,10 @@ footer p {
   header {
     min-width: 100%;
   }
+
+  header p {
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -539,8 +544,9 @@ footer p {
     margin-right: 5%;
   }
 
-  .title h2 {
-    font-size: 24px;
+  .title h2,
+  h1 {
+    font-size: 28px;
     margin-bottom: 2rem;
   }
 
@@ -558,6 +564,10 @@ footer p {
   }
 
   .my-adress {
+    font-size: 16px;
+  }
+
+  header p {
     font-size: 16px;
   }
 }
@@ -582,8 +592,9 @@ footer p {
     margin-right: 7%;
   }
 
-  .title h2 {
-    font-size: 30px;
+  .title h2,
+  h1 {
+    font-size: 32px;
     margin-bottom: 3rem;
   }
 
@@ -611,6 +622,10 @@ footer p {
 
   #about p {
     padding: 0 7%;
+  }
+
+  header p {
+    font-size: 18px;
   }
 }
 
