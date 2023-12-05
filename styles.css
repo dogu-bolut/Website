@@ -536,6 +536,10 @@ footer p {
     height: 70vh;
   }
 
+  #about p {
+    font-size: 18px;
+  }
+
   .website-link {
     font-size: 16px;
     border: 1.5px dashed lightgray;
