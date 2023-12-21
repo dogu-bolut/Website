@@ -68,3 +68,56 @@ scrollLinks.forEach((link) => {
     linksContainer.style.height = 0;
   });
 });
+
+// ********** video controls ************
+const videos = document.querySelectorAll('.video-container');
+const nextBtn = document.querySelector('.next-btn');
+const prevBtn = document.querySelector('.prev-btn');
+
+videos.forEach((videos, index) => {
+  videos.style.left = `${index * 100}%`;
+});
+
+let counter = 0;
+nextBtn.addEventListener('click', () => {
+  counter++;
+  carousel();
+});
+
+prevBtn.addEventListener('click', () => {
+  counter--;
+  carousel();
+});
+
+function carousel() {
+  // cycle through slides
+  //if(counter===slides.length){
+  //counter = 0;
+  //}
+  //if (counter < 0) {
+  //counter = slides.length - 1;
+  //}
+
+  // no cycle just hide buttons
+  if (counter < videos.length - 1) {
+    nextBtn.style.display = "block";
+  } else {
+    nextBtn.style.display = "none";
+  }
+  if (counter > 0) {
+    prevBtn.style.display = "block";
+  } else {
+    prevBtn.style.display = "none";
+  }
+
+  videos.forEach((videos) => {
+    videos.style.transform = `translateX(-${counter * 100}%)`;
+  });
+}
+prevBtn.style.display = "none";
+
+// preloader
+const preloader = document.querySelector('.preloader');
+window.addEventListener('load', () => {
+  preloader.classList.add('hide-preloader');
+});

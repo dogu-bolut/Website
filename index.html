@@ -13,6 +13,9 @@
 </head>
 
 <body>
+  <div class="preloader">
+    <img src="./preloader.gif" alt="preloader">
+  </div>
   <!-- header -->
   <header id="home">
     <!-- navbar -->
@@ -34,9 +37,9 @@
             <li>
               <a href="#about" class="scroll-link">about</a>
             </li>
-            <!-- <li>
-              <a href="#services" class="scroll-link">services</a>
-            </li> -->
+            <li>
+              <a href="#showcase" class="scroll-link">showcase</a>
+            </li>
             <li>
               <a href="#projects" class="scroll-link">projects</a>
             </li>
@@ -93,12 +96,35 @@
       </p>
     </div>
   </section>
-  <!-- services -->
-  <!-- <section id="services" class="section">
+  <!-- showcase -->
+  <section id="showcase" class="section">
     <div class="title">
-      <h2>our <span>services</span></h2>
+      <h2>Quick <span>Showcase</span></h2>
     </div>
-  </section> -->
+    <div class="slider-container">
+      <video class="video-container" muted autoplay loop>
+        <source src="./video.mp4" type="video/mp4">
+      </video>
+      <video class="video-container" muted autoplay loop>
+        <source src="./video.mp4" type="video/mp4">
+      </video>
+      <video class="video-container" muted autoplay loop>
+        <source src="./video.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="btn-container">
+      <button type="button" class="prev-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+        </svg></button>
+      <button type="button" class="next-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+        </svg></button>
+    </div>
+  </section>
   <!-- projects -->
   <section id="projects" class="section">
     <div class="title">
