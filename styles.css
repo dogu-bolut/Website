@@ -782,11 +782,6 @@ footer p {
   transition: var(--transition);
 }
 
-.hide-preloader {
-  z-index: -999;
-  visibility: hidden;
-}
-
 @keyframes bounce {
   0% {
     transform: scale(1);

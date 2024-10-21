@@ -27,7 +27,7 @@ navToggle.addEventListener('click', () => {
 const navbar = document.getElementById('nav');
 const topLink = document.querySelector('.top-link');
 window.addEventListener('scroll', () => {
-  const scrollHeight = window.pageYOffset;
+  const scrollHeight = window.scrollY;
   const navHeight = navbar.getBoundingClientRect().height;
   if (scrollHeight > navHeight) {
     navbar.classList.add('fixed-nav');
@@ -116,8 +116,7 @@ function carousel() {
 }
 prevBtn.style.display = "none";
 
-// preloader
-const preloader = document.querySelector('.preloader');
-window.addEventListener('load', () => {
-  preloader.classList.add('hide-preloader');
-});
+window.onload = function(){
+  var el = document.getElementById('preloader');
+  el.style.display = 'none';
+}
