@@ -120,5 +120,5 @@ window.onload = function(){
   setTimeout(() => {
     var preloader = document.querySelector('.preloader');
     preloader.style.display = 'none';
-  }, 500);
+  }, 2000);
 }
