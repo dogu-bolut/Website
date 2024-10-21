@@ -1,5 +1,5 @@
 /*
-=============== 
+===============
 Fonts
 ===============
 */
@@ -7,7 +7,7 @@ Fonts
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
 /*
-=============== 
+===============
 Variables
 ===============
 */
@@ -47,7 +47,7 @@ Variables
   --clr-black: #222;
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Poppins", sans-serif;
-  --transition: all 0.3s linear;
+  --transition: all 0.5s ease-in-out;
   --spacing: 0.25rem;
   --radius: 0.5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -57,7 +57,31 @@ Variables
 }
 
 /*
-=============== 
+===============
+Preloader Style
+===============
+*/
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--clr-white);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; }
+}
+
+/*
+===============
 Global Styles
 ===============
 */
@@ -172,8 +196,11 @@ p {
   }
 }
 
-/*  global classes */
-
+/*
+===============
+Global Classes
+===============
+*/
 .btn {
   text-transform: uppercase;
   background: transparent;
@@ -206,7 +233,11 @@ p {
   color: var(--clr-secondary);
 }
 
-/* section */
+/*
+===========
+Section
+===========
+*/
 .section {
   width: 100%;
   padding-bottom: 5rem;
@@ -231,18 +262,16 @@ main {
 }
 
 /*
-=============== 
-Scroll
+===============
+Scroll & Navbar
 ===============
 */
-/* navbar */
 nav {
   z-index: 10;
   background: var(--clr-white);
   padding: 1rem 1.5rem;
 }
 
-/* fixed nav */
 .fixed-nav {
   position: fixed;
   top: 0;
@@ -360,7 +389,11 @@ nav {
   }
 }
 
-/* hero */
+/*
+======
+Hero
+======
+*/
 header {
   min-height: 100vh;
   background: linear-gradient(rgba(212, 209, 63, 0.5), rgba(0, 0, 0, 0.7)),
@@ -390,7 +423,11 @@ header {
   }
 }
 
-/* sections and title */
+/*
+==================
+Sections & Titles
+==================
+*/
 
 .title h2 {
   text-align: center;
@@ -718,7 +755,11 @@ footer p {
   z-index: 100;
 }
 
-/* Showcase Videos*/
+/*
+===============
+Showcase Videos
+===============
+*/
 
 .slider-container {
   width: 80vw;
@@ -765,21 +806,6 @@ footer p {
 .prevBtn:hover,
 .nextBtn:hover {
   color: var(--clr-grey-3);
-}
-
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--clr-white);
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  visibility: visible;
-  z-index: 999;
-  transition: var(--transition);
 }
 
 @keyframes bounce {

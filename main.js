@@ -117,6 +117,12 @@ function carousel() {
 prevBtn.style.display = "none";
 
 window.onload = function(){
-  var el = document.getElementById('preloader');
-  el.style.display = 'none';
+  var preloader = document.querySelector('.preloader');
+    setTimeout(function() {
+        preloader.style.opacity = '0';
+        setTimeout(() => {
+            preloader.style.display = 'none';
+            document.body.style.display = 'block'; // Show body content
+        }, 100);
+    }, 100);
 }
