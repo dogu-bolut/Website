@@ -116,9 +116,11 @@ function carousel() {
 }
 prevBtn.style.display = "none";
 
-window.onload = function(){
-  setTimeout(() => {
-    var preloader = document.querySelector('.preloader');
-    preloader.style.display = 'none';
-  }, 2000);
+window.onload = function () {
+  setTimeout(function(){
+    var loaders = document.querySelectorAll('.loader');
+    for (var i = 0; i < loaders.length; i++) {
+      loaders[i].style.display = 'none';
+    }
+  }, 800);
 }
