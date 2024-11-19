@@ -26,12 +26,10 @@ Variables
   --clr-primary-8: hsl(205, 86%, 81%);
   --clr-primary-9: hsl(205, 90%, 88%);
   --clr-primary-10: hsl(205, 100%, 96%);
-  /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-2: hsl(211, 39%, 23%);
   --clr-grey-3: hsl(209, 34%, 30%);
   --clr-grey-4: hsl(209, 28%, 39%);
-  /* grey used for paragraphs */
   --clr-grey-5: hsl(210, 22%, 49%);
   --clr-grey-6: hsl(209, 23%, 60%);
   --clr-grey-7: hsl(211, 27%, 70%);
@@ -47,7 +45,7 @@ Variables
   --clr-black: #222;
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Poppins", sans-serif;
-  --transition: all 0.5s ease-in-out;
+  --transition: all 0.2s ease-in-out;
   --spacing: 0.25rem;
   --radius: 0.5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -113,7 +111,7 @@ html {
 
 body {
   font-family: var(--ff-secondary);
-  color: var(--clr-grey-1);
+  color: var(--clr-grey-5);
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -213,32 +211,32 @@ Global Classes
 .btn {
   text-transform: uppercase;
   background: transparent;
-  color: var(--clr-black);
+  color: var(--clr-grey-9);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
   transition: var(--transition);
   font-size: 0.875rem;
-  border: 2px solid var(--clr-black);
+  border: 2px solid var(--clr-grey-8);
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
 }
 
 .btn:hover {
-  color: var(--clr-white);
-  background: var(--clr-black);
+  color: var(--clr-grey-4);
+  background: var(--clr-grey-9);
 }
 
 .btn-white {
-  color: var(--clr-white);
-  border-color: var(--clr-white);
+  color: var(--clr-grey-8);
+  border-color: var(--clr-grey-8);
   border-radius: 0;
   padding: 0.5rem 1rem;
 }
 
-.btn:hover {
-  background: var(--clr-white);
+.btn-white:hover {
+  background: var(--clr-grey-8);
   color: var(--clr-secondary);
 }
 
@@ -277,7 +275,7 @@ Scroll & Navbar
 */
 nav {
   z-index: 10;
-  background: var(--clr-white);
+  background: var(--clr-grey-10);
   padding: 1rem 1.5rem;
 }
 
@@ -286,7 +284,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--clr-white);
+  background: var(--clr-grey-10);
   box-shadow: var(--light-shadow);
 }
 
@@ -335,7 +333,7 @@ nav {
 }
 
 .links a {
-  background: var(--clr-white);
+  background: var(--clr-grey-10);
   color: var(--clr-grey-5);
   font-size: 1.1rem;
   text-transform: capitalize;
@@ -382,7 +380,7 @@ nav {
 
   .links a {
     background: transparent;
-    color: var(--clr-white);
+    color: var(--clr-grey-10);
     font-size: 1.1rem;
     text-transform: capitalize;
     letter-spacing: var(--spacing);
@@ -394,7 +392,8 @@ nav {
   }
 
   .links a:hover {
-    color: var(--clr-white);
+    color: var(--clr-primary-3);
+    animation: bounce 1s ease-in-out infinite;
   }
 }
 
@@ -405,7 +404,7 @@ Hero
 */
 header {
   min-height: 100vh;
-  background: linear-gradient(rgba(212, 209, 63, 0.5), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(hsla(212, 33%, 89%, 0.4), hsla(209, 61%, 16%, 0.9)),
     url(./PathToMountain.jpg) center/cover no-repeat;
 }
 
@@ -417,12 +416,12 @@ header {
 }
 
 .container h1 {
-  color: var(--clr-white);
+  color: var(--clr-grey-9);
   text-transform: uppercase;
 }
 
 .container p {
-  color: var(--clr-white);
+  color: var(--clr-grey-9);
   margin-bottom: 1.75rem;
 }
 
@@ -458,6 +457,7 @@ Sections & Titles
 }
 
 #about p {
+  color: var(--clr-grey-6);
   font-size: 18px;
   display: flex;
   justify-content: center;
@@ -471,13 +471,14 @@ Sections & Titles
 #showcase,
 #websites,
 #contacts {
-  background: var(--clr-white);
+  background: var(--clr-grey-8);
 }
 
 #about,
 #projects,
 #games {
-  background: #E6ECD1;
+  /* background: #E6ECD1; */
+  background: var(--clr-grey-1);
 }
 
 footer {
@@ -486,7 +487,7 @@ footer {
 }
 
 footer p {
-  color: var(--clr-white);
+  color: var(--clr-grey-8);
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
@@ -497,15 +498,25 @@ footer p {
   padding: 7px;
   border-radius: 10px;
   text-decoration: none;
-  color: #1a1a1a;
+  color: var(--clr-grey-9);
   font-size: 16px;
   font-weight: 500;
   transition: 0.3s ease;
 }
 
 .my-adress:hover {
-  color: #E6ECD1;
-  background-color: #1a1a1a;
+  color: var(--clr-grey-1);
+  background-color: var(--clr-grey-9);
+}
+
+#contacts .my-adress {
+  color: var(--clr-grey-1);
+  font-size: 18px;
+}
+
+#contacts .my-adress:hover {
+  color: var(--clr-grey-8);
+  background-color: var(--clr-grey-1);
 }
 
 .link-container {
@@ -519,15 +530,15 @@ footer p {
 
 .website-link {
   text-decoration: none;
-  color: #1a1a1a;
+  color: var(--clr-grey-1);
   font-size: 16px;
   font-weight: 300;
   transition: 0.3s ease;
 }
 
 .website-link:hover {
-  color: #E6ECD1;
-  background-color: #291944;
+  color: var(--clr-grey-8);
+  background-color: var(--clr-grey-1);
 }
 
 @media screen and (min-width: 200px) {
@@ -556,7 +567,7 @@ footer p {
     min-height: 60px;
     border-radius: 6px;
     margin: 5px;
-    border: 1px dashed lightgray;
+    border: 1px dashed var(--clr-grey-7);
     padding: 8px;
   }
 
@@ -608,7 +619,7 @@ footer p {
 
   .website-link {
     font-size: 16px;
-    border: 1.5px dashed lightgray;
+    border: 1.5px dashed var(--clr-grey-7);
   }
 
   .my-adress {
@@ -656,7 +667,7 @@ footer p {
     border-radius: 10px;
     font-size: 18px;
     margin: 5px;
-    border: 2px dashed lightgray;
+    border: 2px dashed var(--clr-grey-7);
     padding: 30px;
   }
 
@@ -689,15 +700,15 @@ footer p {
 
 .game-link {
   text-decoration: none;
-  color: #1a1a1a;
+  color: var(--clr-grey-8);
   font-size: 24px;
   font-weight: 300;
   transition: 0.3s ease;
 }
 
 .game-link:hover {
-  color: #E6ECD1;
-  background-color: #291944;
+  color: var(--clr-grey-1);
+  background-color: var(--clr-grey-8);
 }
 
 @media screen and (min-width: 200px) {
@@ -714,7 +725,7 @@ footer p {
     min-height: 60px;
     border-radius: 6px;
     margin: 5px;
-    border: 1px dashed lightgray;
+    border: 1px dashed var(--clr-grey-4);
     padding: 5px;
   }
 }
@@ -722,7 +733,7 @@ footer p {
 @media screen and (min-width: 768px) {
   .game-link {
     font-size: 16px;
-    border: 1.5px dashed lightgray;
+    border: 1.5px dashed var(--clr-grey-4);
   }
 }
 
@@ -736,7 +747,7 @@ footer p {
     border-radius: 10px;
     font-size: 18px;
     margin: 5px;
-    border: 2px dashed lightgray;
+    border: 2px dashed var(--clr-grey-4);
     padding: 30px;
   }
 }
@@ -752,7 +763,7 @@ footer p {
   display: grid;
   place-items: center;
   border-radius: var(--radius);
-  color: var(--clr-white);
+  color: var(--clr-grey-8);
   animation: bounce 2s ease-in-out infinite;
 
   visibility: hidden;
@@ -785,7 +796,7 @@ Showcase Videos
   position: absolute;
   width: 100%;
   height: 100%;
-  color: var(--clr-white);
+  color: var(--clr-grey-8);
   display: grid;
   place-items: center;
   transition: all 0.50s ease-in-out;
@@ -823,7 +834,7 @@ Showcase Videos
   }
 
   50% {
-    transform: scale(1.5);
+    transform: scale(1.1);
   }
 
   100% {
