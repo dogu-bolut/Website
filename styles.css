@@ -393,7 +393,7 @@ nav {
 
   .links a:hover {
     color: var(--clr-primary-3);
-    animation: bounce 1s ease-in-out infinite;
+    animation: bounce 2s ease-in-out infinite;
   }
 }
 
@@ -764,7 +764,7 @@ footer p {
   place-items: center;
   border-radius: var(--radius);
   color: var(--clr-grey-8);
-  animation: bounce 2s ease-in-out infinite;
+  animation: bounce 1s ease-in-out infinite;
 
   visibility: hidden;
   z-index: -100;
