@@ -5,6 +5,8 @@ Fonts
 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
 
 /*
 ===============
@@ -43,8 +45,8 @@ Variables
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-secondary: hsla(182, 63%, 54%);
   --clr-black: #222;
-  --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Poppins", sans-serif;
+  --ff-primary: "Raleway", sans-serif;
+  --ff-secondary: "Montserrat", sans-serif;
   --transition: all 0.2s ease-in-out;
   --spacing: 0.25rem;
   --radius: 0.5rem;
@@ -54,6 +56,16 @@ Variables
   --fixed-width: 620px;
 }
 
+/* :root {
+  --primary-color: #007ACC; 
+  --secondary-color: #004A80; 
+  --background-color: #F9F9F9; 
+  --text-color: #333333; 
+  --accent-color: #FFA500; 
+  --border-color: #E0E0E0; 
+} */
+
+
 /*
 ===============
 Preloader Style
@@ -61,30 +73,30 @@ Preloader Style
 */
 
 .loader {
-background-color: hsla(209, 34%, 30%, 0.4);
- position:fixed;
- top: 0;
- left: 0;
- right: 0;
- bottom: 0;
- display:grid;
- justify-content: center;
- align-items: center;
- z-index: 999;
+  background-color: hsla(209, 34%, 30%, 0.4);
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display:grid;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
 }
 
 .preloader{
- border: 7px dashed var(--clr-grey-1);
- border-right: 7px dashed var(--clr-primary-2);
- border-radius: 50%;
- width: 80px;
- height: 80px;
- animation: spin 0.8s ease-in-out infinite;
+  border: 7px dashed var(--clr-grey-1);
+  border-right: 7px dashed var(--clr-primary-2);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 0.8s ease-in-out infinite;
 }
 
 @keyframes spin {
- 0% { transform: rotate(360deg); }
- 100% { transform: rotate(0deg); }
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
 }
 
 /*
