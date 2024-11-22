@@ -101,6 +101,29 @@ Preloader Style
 
 /*
 ===============
+Section Divider
+===============
+*/
+
+.curved-divider {
+  position: relative;
+  height: 190xp; /* Adjust based on your design */
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: -1px;
+}
+
+.curved-divider svg {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/*
+===============
 Global Styles
 ===============
 */
@@ -416,8 +439,9 @@ Hero
 */
 header {
   min-height: 100vh;
-  background: linear-gradient(hsla(212, 33%, 89%, 0.4), hsla(209, 61%, 16%, 0.9)),
-    url(./PathToMountain.jpg) center/cover no-repeat;
+  background: linear-gradient(var(--clr-grey-4), var(--clr-grey-8));
+  /* background: linear-gradient(hsla(212, 33%, 89%, 0.4), hsla(209, 61%, 16%, 0.9)),
+    url(./PathToMountain.jpg) center/cover no-repeat; */
 }
 
 .banner {
@@ -435,12 +459,6 @@ header {
 .container p {
   color: var(--clr-grey-9);
   margin-bottom: 1.75rem;
-}
-
-@media screen and (min-width: 768px) {
-  .container p {
-    max-width: 40rem;
-  }
 }
 
 /*
@@ -553,153 +571,6 @@ footer p {
   background-color: var(--clr-grey-1);
 }
 
-@media screen and (min-width: 200px) {
-  p {
-    margin-left: 3%;
-    margin-right: 3%;
-  }
-
-  .title h2,
-  h1 {
-    font-size: 24px;
-    margin-bottom: 1rem;
-  }
-
-  .link-container {
-    margin-top: 30px;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .website-link {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 14px;
-    justify-content: center;
-    min-height: 60px;
-    border-radius: 6px;
-    margin: 5px;
-    border: 1px dashed var(--clr-grey-7);
-    padding: 8px;
-  }
-
-  .my-adress {
-    font-size: 14px;
-  }
-
-  #about {
-    height: 100vh;
-  }
-
-  #about p {
-    font-size: 12px;
-    padding: 0 3%;
-  }
-
-  #websites {
-    min-height: 70vh;
-  }
-
-  header {
-    min-width: 100%;
-  }
-
-  header p {
-    font-size: 12px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  p {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  .title h2,
-  h1 {
-    font-size: 28px;
-    margin-bottom: 2rem;
-  }
-
-  #about {
-    height: 100vh;
-  }
-
-  #about p {
-    font-size: 18px;
-  }
-
-  .website-link {
-    font-size: 16px;
-    border: 1.5px dashed var(--clr-grey-7);
-  }
-
-  .my-adress {
-    font-size: 16px;
-  }
-
-  header p {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-height: 800px) and (max-width:400px) {
-  #websites {
-    min-height: 100vh;
-  }
-
-  #about {
-    height: 120vh;
-  }
-
-  #projects {
-    height: 60vh;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  p {
-    margin-left: 8%;
-    margin-right: 8%;
-  }
-
-  .title h2,
-  h1 {
-    font-size: 32px;
-    margin-bottom: 3rem;
-  }
-
-  .link-container {
-    margin-top: 40px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
-  .website-link {
-    min-height: 10px;
-    border-radius: 10px;
-    font-size: 18px;
-    margin: 5px;
-    border: 2px dashed var(--clr-grey-7);
-    padding: 30px;
-  }
-
-  .my-adress {
-    font-size: 18px;
-  }
-
-  #websites {
-    height: 120vh;
-  }
-
-  #about p {
-    padding: 0 7%;
-  }
-
-  header p {
-    font-size: 18px;
-  }
-}
-
 .gamelink-container {
   margin-top: 50px;
   display: grid;
@@ -721,47 +592,6 @@ footer p {
 .game-link:hover {
   color: var(--clr-grey-1);
   background-color: var(--clr-grey-8);
-}
-
-@media screen and (min-width: 200px) {
-  .gamelink-container {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .game-link {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 14px;
-    justify-content: center;
-    min-height: 60px;
-    border-radius: 6px;
-    margin: 5px;
-    border: 1px dashed var(--clr-grey-4);
-    padding: 5px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .game-link {
-    font-size: 16px;
-    border: 1.5px dashed var(--clr-grey-4);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .gamelink-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
-  .game-link {
-    min-height: 10px;
-    border-radius: 10px;
-    font-size: 18px;
-    margin: 5px;
-    border: 2px dashed var(--clr-grey-4);
-    padding: 30px;
-  }
 }
 
 .top-link {
@@ -851,5 +681,254 @@ Showcase Videos
 
   100% {
     transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 200px) {
+  p {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .title h2,
+  h1 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+
+  .curved-divider{
+    height: 38px;
+  }
+
+  .link-container {
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .website-link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    justify-content: center;
+    min-height: 60px;
+    border-radius: 6px;
+    margin: 5px;
+    border: 1px dashed var(--clr-grey-7);
+    padding: 8px;
+  }
+
+  .my-adress {
+    font-size: 14px;
+  }
+
+  #about {
+    height: 100vh;
+  }
+
+  #about p {
+    font-size: 12px;
+    padding: 0 3%;
+  }
+
+  #websites {
+    min-height: 70vh;
+  }
+
+  header {
+    min-width: 100%;
+  }
+
+  header p {
+    font-size: 12px;
+  }
+
+  .gamelink-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .game-link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    justify-content: center;
+    min-height: 60px;
+    border-radius: 6px;
+    margin: 5px;
+    border: 1px dashed var(--clr-grey-4);
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  p {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .title h2,
+  h1 {
+    font-size: 28px;
+    margin-bottom: 2rem;
+  }
+
+  #about {
+    height: 220vh;
+  }
+
+  #projects {
+    height: 70vh;
+  }
+
+  #games{
+    height: 120vh;
+  }
+
+  #contacts{
+    height: 70vh;
+  }
+
+  #about p {
+    font-size: 18px;
+  }
+
+  .curved-divider{
+    height: 84px;
+  }
+
+  .website-link {
+    font-size: 16px;
+    border: 1.5px dashed var(--clr-grey-7);
+  }
+
+  .my-adress {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  .container p {
+    max-width: 40rem;
+  }
+
+  .game-link {
+    font-size: 16px;
+    border: 1.5px dashed var(--clr-grey-4);
+  }
+}
+
+@media screen and (height: 667px) and (width:375px) { /*Iphone SE */
+  #websites {
+    min-height: 100vh;
+  }
+
+  #about {
+    height: 100vh;
+  }
+
+  #projects {
+    height: 50vh;
+  }
+
+  #games {
+    height: 60vh;
+  }
+
+  #contacts {
+    height: 40vh;
+  }
+
+  .curved-divider{
+    height: 37px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  p {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .title h2,
+  h1 {
+    font-size: 32px;
+    margin-bottom: 3rem;
+  }
+
+  .curved-divider{
+    height: 125px;
+  }
+
+  .link-container {
+    margin-top: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .website-link {
+    min-height: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 5px;
+    border: 2px dashed var(--clr-grey-7);
+    padding: 30px;
+  }
+
+  .my-adress {
+    font-size: 18px;
+  }
+
+  #websites {
+    height: 180vh;
+  }
+
+  #about p {
+    padding: 0 7%;
+  }
+
+  header p {
+    font-size: 18px;
+  }
+
+  .gamelink-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .game-link {
+    min-height: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 5px;
+    border: 2px dashed var(--clr-grey-4);
+    padding: 30px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .curved-divider{
+    height: 190px;
+  }
+
+  #about {
+    height: 60vh;
+  }
+
+  #projects {
+    height: 40vh;
+  }
+
+  #websites {
+    height: 80vh;
+  }
+
+  #games {
+    height: 50vh;
+  }
+
+  #contacts {
+    height: 30vh;
   }
 }
