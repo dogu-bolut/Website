@@ -735,6 +735,10 @@ Showcase Videos
     min-height: 70vh;
   }
 
+  #games {
+    height: 40vh;
+  }
+
   header {
     min-width: 100%;
   }
