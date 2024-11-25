@@ -146,7 +146,7 @@ html {
 
 body {
   font-family: var(--ff-secondary);
-  color: var(--clr-grey-5);
+  color: #cfd8dc ;
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -206,7 +206,7 @@ p {
   min-width: 200px;
   max-width: 1600px;
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
+  color: #e0f7fa;
 }
 
 @media screen and (min-width: 800px) {
@@ -246,33 +246,21 @@ Global Classes
 .btn {
   text-transform: uppercase;
   background: transparent;
-  color: var(--clr-grey-9);
+  color: #e0f7fa;
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
   transition: var(--transition);
   font-size: 0.875rem;
-  border: 2px solid var(--clr-grey-8);
+  border: 2px solid #cfd8dc;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
 }
 
 .btn:hover {
-  color: var(--clr-grey-4);
-  background: var(--clr-grey-9);
-}
-
-.btn-white {
-  color: var(--clr-grey-8);
-  border-color: var(--clr-grey-8);
-  border-radius: 0;
-  padding: 0.5rem 1rem;
-}
-
-.btn-white:hover {
-  background: var(--clr-grey-8);
-  color: var(--clr-secondary);
+  color: #cfd8dc;
+  background: #00acc1;
 }
 
 /*
@@ -324,11 +312,11 @@ nav {
 }
 
 .fixed-nav .links a {
-  color: var(--clr-grey-1);
+  color: #37474f;
 }
 
 .fixed-nav .links a:hover {
-  color: var(--clr-secondary);
+  color: #00acc1;
 }
 
 /* .fixed-nav .links-container {
@@ -342,7 +330,7 @@ nav {
 
 .nav-toggle {
   font-size: 1.5rem;
-  color: var(--clr-grey-1);
+  color: #37474f;
   background: transparent;
   border-color: transparent;
   transition: var(--transition);
@@ -350,7 +338,7 @@ nav {
 }
 
 .nav-toggle:hover {
-  color: var(--clr-secondary);
+  color: #00acc1;
 }
 
 .logo {
@@ -368,8 +356,8 @@ nav {
 }
 
 .links a {
-  background: var(--clr-grey-10);
-  color: var(--clr-grey-5);
+  background: #fff;
+  color: #37474f;
   font-size: 1.1rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
@@ -380,7 +368,7 @@ nav {
 }
 
 .links a:hover {
-  color: var(--clr-grey-1);
+  color: #00acc1;
 }
 
 @media screen and (min-width: 950px) {
@@ -415,7 +403,7 @@ nav {
 
   .links a {
     background: transparent;
-    color: var(--clr-grey-10);
+    color: #37474f;
     font-size: 1.1rem;
     text-transform: capitalize;
     letter-spacing: var(--spacing);
@@ -427,8 +415,8 @@ nav {
   }
 
   .links a:hover {
-    color: var(--clr-primary-3);
-    animation: bounce 2s ease-in-out infinite;
+    color: #00acc1;
+    animation: bounce 3s ease-in-out infinite;
   }
 }
 
@@ -439,7 +427,7 @@ Hero
 */
 header {
   min-height: 100vh;
-  background: linear-gradient(var(--clr-grey-4), var(--clr-grey-8));
+  background: linear-gradient(#b0bec5, #607d8b);
   /* background: linear-gradient(hsla(212, 33%, 89%, 0.4), hsla(209, 61%, 16%, 0.9)),
     url(./PathToMountain.jpg) center/cover no-repeat; */
 }
@@ -452,12 +440,12 @@ header {
 }
 
 .container h1 {
-  color: var(--clr-grey-9);
+  color: #ffebee;
   text-transform: uppercase;
 }
 
 .container p {
-  color: var(--clr-grey-9);
+  color: #cfd8dc;
   margin-bottom: 1.75rem;
 }
 
@@ -473,7 +461,7 @@ Sections & Titles
 }
 
 .title span {
-  color: var(--clr-secondary);
+  color: #ffebee;
 }
 
 #projects,
@@ -487,7 +475,7 @@ Sections & Titles
 }
 
 #about p {
-  color: var(--clr-grey-6);
+  color: #263238;
   font-size: 18px;
   display: flex;
   justify-content: center;
@@ -501,23 +489,24 @@ Sections & Titles
 #showcase,
 #websites,
 #contacts {
-  background: var(--clr-grey-8);
+  background: #607d8b;
 }
 
 #about,
 #projects,
 #games {
   /* background: #E6ECD1; */
-  background: var(--clr-grey-1);
+  background: #b0bec5;
 }
 
 footer {
-  background: var(--clr-grey-1);
+  background: #b0bec5;
   padding: 5rem 1rem;
 }
 
 footer p {
-  color: var(--clr-grey-8);
+  font-weight: 600;
+  color: #263238;
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
@@ -528,25 +517,25 @@ footer p {
   padding: 7px;
   border-radius: 10px;
   text-decoration: none;
-  color: var(--clr-grey-9);
+  color: #263238;
   font-size: 16px;
   font-weight: 500;
   transition: 0.3s ease;
 }
 
 .my-adress:hover {
-  color: var(--clr-grey-1);
-  background-color: var(--clr-grey-9);
+  color: #263238;
+  background-color: #e0f7fa;
 }
 
 #contacts .my-adress {
-  color: var(--clr-grey-1);
+  color: #e0f7fa;
   font-size: 18px;
 }
 
 #contacts .my-adress:hover {
-  color: var(--clr-grey-8);
-  background-color: var(--clr-grey-1);
+  color: #e0f7fa;
+  background-color: #263238;
 }
 
 .link-container {
@@ -560,15 +549,15 @@ footer p {
 
 .website-link {
   text-decoration: none;
-  color: var(--clr-grey-1);
+  color: #e0f7fa;
   font-size: 16px;
   font-weight: 300;
   transition: 0.3s ease;
 }
 
 .website-link:hover {
-  color: var(--clr-grey-8);
-  background-color: var(--clr-grey-1);
+  color: #e0f7fa;
+  background-color: #263238;
 }
 
 .gamelink-container {
@@ -583,15 +572,15 @@ footer p {
 
 .game-link {
   text-decoration: none;
-  color: var(--clr-grey-8);
+  color: #263238;
   font-size: 24px;
   font-weight: 300;
   transition: 0.3s ease;
 }
 
 .game-link:hover {
-  color: var(--clr-grey-1);
-  background-color: var(--clr-grey-8);
+  color: #263238;
+  background-color: #e0f7fa;
 }
 
 .top-link {
@@ -599,14 +588,14 @@ footer p {
   position: fixed;
   bottom: 3rem;
   right: 3rem;
-  background: var(--clr-secondary);
+  background: #00acc1;
   width: 2rem;
   height: 2rem;
   display: grid;
   place-items: center;
   border-radius: var(--radius);
-  color: var(--clr-grey-8);
-  animation: bounce 1s ease-in-out infinite;
+  color: #e0f7fa;
+  animation: bounce 2s ease-in-out infinite;
 
   visibility: hidden;
   z-index: -100;
@@ -638,7 +627,6 @@ Showcase Videos
   position: absolute;
   width: 100%;
   height: 100%;
-  color: var(--clr-grey-8);
   display: grid;
   place-items: center;
   transition: all 0.50s ease-in-out;
@@ -661,13 +649,13 @@ Showcase Videos
   margin: 0 0.25rem;
   text-transform: capitalize;
   letter-spacing: 2px;
-  color: var(--clr-grey-5);
+  color: #263238;
   transition: var(--transition);
 }
 
 .prevBtn:hover,
 .nextBtn:hover {
-  color: var(--clr-grey-3);
+  color: #fff;
 }
 
 @keyframes bounce {
@@ -714,7 +702,7 @@ Showcase Videos
     min-height: 60px;
     border-radius: 6px;
     margin: 5px;
-    border: 1px dashed var(--clr-grey-7);
+    border: 1px solid #e0f7fa;
     padding: 8px;
   }
 
@@ -760,7 +748,7 @@ Showcase Videos
     min-height: 60px;
     border-radius: 6px;
     margin: 5px;
-    border: 1px dashed var(--clr-grey-4);
+    border: 1px solid #263238;
     padding: 5px;
   }
 }
@@ -803,7 +791,7 @@ Showcase Videos
 
   .website-link {
     font-size: 16px;
-    border: 1.5px dashed var(--clr-grey-7);
+    border: 1.5px solid #e0f7fa;
   }
 
   .my-adress {
@@ -821,7 +809,7 @@ Showcase Videos
 
   .game-link {
     font-size: 16px;
-    border: 1.5px dashed var(--clr-grey-4);
+    border: 1.5px solid #263238;
   }
 }
 
@@ -877,7 +865,7 @@ Showcase Videos
     border-radius: 10px;
     font-size: 18px;
     margin: 5px;
-    border: 2px dashed var(--clr-grey-7);
+    border: 2px solid #e0f7fa;
     padding: 30px;
   }
 
@@ -906,7 +894,7 @@ Showcase Videos
     border-radius: 10px;
     font-size: 18px;
     margin: 5px;
-    border: 2px dashed var(--clr-grey-4);
+    border: 2px solid #263238;
     padding: 30px;
   }
 }
